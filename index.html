@@ -32,6 +32,13 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
+        
+        /* --- THAI TYPOGRAPHY FIXES --- */
+        body {
+            overflow-wrap: break-word; 
+            word-break: normal; 
+            line-break: strict; 
+        }
     </style>
 </head>
 <body class="bg-brand-dark text-brand-light font-sans antialiased selection:bg-brand-accent selection:text-white">
@@ -54,7 +61,6 @@
     <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand-dark/95 to-brand-dark z-10"></div>
-            <!-- Abstract background graphic -->
             <div class="absolute top-0 right-0 -mr-20 -mt-20 w-[500px] h-[500px] rounded-full bg-brand-accent/20 blur-[100px] z-0"></div>
             <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-[400px] h-[400px] rounded-full bg-blue-900/20 blur-[100px] z-0"></div>
         </div>
@@ -65,8 +71,9 @@
                 รับพันธมิตรรุ่น Beta เพียง 3 รายเท่านั้น สำหรับเดือนพฤษภาคม 2026
             </div>
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold tracking-tight mb-6 leading-tight">
-                เราเชื่อมต่ออสังหาริมทรัพย์ไทย สู่ <br class="hidden md:block" />
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-yellow-200">กลุ่มผู้ซื้อชาวเยอรมันกระเป๋าหนัก (High-Net-Worth)</span>
+                <!-- Using <wbr> to prevent awkward line breaks in Thai words -->
+                เราเชื่อมต่อ<wbr>อสังหาริมทรัพย์<wbr>ไทย สู่ <br class="hidden md:block" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-yellow-200">กลุ่มผู้ซื้อ<wbr>ชาวเยอรมัน<wbr>กระเป๋าหนัก<wbr> (High-Net-Worth)</span>
             </h1>
             <p class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-400 font-light mb-10">
                 อย่าปล่อยให้โอกาสทำเงินหลุดลอยไปกับการตลาดภาษาอังกฤษเพียงอย่างเดียว เราสร้างระบบ Sales Funnel ภาษาเยอรมันที่น่าเชื่อถือสูง พร้อมดำเนินการติดต่อกลุ่มเป้าหมายโดยตรง เพื่อส่งต่อนักลงทุนอสังหาริมทรัพย์ชาว DACH ที่มีศักยภาพตรงสู่ WhatsApp ของคุณ
@@ -87,7 +94,8 @@
     <section id="opportunity" class="py-20 bg-black/30 border-y border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">กับดักของการพึ่งพา "ภาษาอังกฤษ" เพียงอย่างเดียว!</h2>
+                <!-- <wbr> added for clean breaks on small phones -->
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">กับดักของ<wbr>การพึ่งพา "ภาษาอังกฤษ" <wbr>เพียงอย่างเดียว!</h2>
                 <p class="text-gray-400 max-w-2xl mx-auto text-lg">ทำไมเอเจนซี่อสังหาริมทรัพย์ไทยส่วนใหญ่ถึงพลาดโอกาสในตลาด DACH มูลค่าหลายพันล้านดอลลาร์?</p>
             </div>
 
@@ -113,7 +121,7 @@
                     <div class="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center mb-6 border border-emerald-500/20">
                         <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">อัลกอริทึมมองไม่เห็น</h3>
+                    <h3 class="text-xl font-bold mb-3">อัลกอริทึม<wbr>มองไม่เห็น</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">อัลกอริทึมของโซเชียลมีเดียในเยอรมนีจะให้ความสำคัญกับคอนเทนต์ที่เป็นภาษาท้องถิ่นก่อน ดังนั้น วิดีโออสังหาฯ ภาษาอังกฤษของคุณ จึงส่งไปไม่ถึงกลุ่มผู้ซื้อในมิวนิก ซูริค หรือเวียนนา</p>
                 </div>
             </div>
@@ -125,7 +133,8 @@
         <div class="absolute inset-0 bg-brand-accent/5 z-0"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-serif font-bold mb-6">ระบบเซลส์ฟันเนล 3 ขั้นตอนในเยอรมนี</h2>
+                <!-- <wbr> added -->
+                <h2 class="text-3xl md:text-5xl font-serif font-bold mb-6">ระบบเซลส์ฟันเนล <wbr>3 ขั้นตอน<wbr>ในเยอรมนี</h2>
                 <p class="text-gray-400 max-w-2xl mx-auto text-lg">เราจัดการด้านเทคโนโลยี การแปลภาษา และการดึงคนเข้าชมเว็บไซต์ หน้าที่ของทีมเอเจนท์ของคุณมีเพียงแค่ปิดการขาย</p>
             </div>
 
@@ -170,7 +179,8 @@
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2">
                     <h2 class="text-brand-accent font-semibold tracking-wider uppercase text-sm mb-2">ข้อได้เปรียบที่เหนือกว่าของเรา</h2>
-                    <h3 class="text-3xl md:text-5xl font-serif font-bold mb-6 leading-tight">สะพานเชื่อมที่สมบูรณ์แบบระหว่างสองวัฒนธรรม</h3>
+                    <!-- <wbr> added -->
+                    <h3 class="text-3xl md:text-5xl font-serif font-bold mb-6 leading-tight">สะพานเชื่อม<wbr>ที่สมบูรณ์แบบ<wbr>ระหว่างสองวัฒนธรรม</h3>
                     <p class="text-gray-400 text-lg mb-6 leading-relaxed">
                         บริษัทการตลาดของไทยไม่เข้าใจจิตวิทยาของผู้ซื้ออสังหาริมทรัพย์ชาวเยอรมัน ส่วนบริษัทในยุโรปก็ไม่เข้าใจวิธีการทำงานของอสังหาริมทรัพย์ในประเทศไทย เราเป็นเอเจนซี่เดียวที่สร้างขึ้นมาเพื่อเชื่อมช่องว่างนี้โดยเฉพาะ
                     </p>
@@ -232,7 +242,8 @@
                     ข้อเสนอพิเศษสำหรับรุ่น Beta
                 </div>
 
-                <h2 class="text-3xl md:text-5xl font-serif font-bold mb-6">กรณีศึกษาแบบ "ความเสี่ยงเป็นศูนย์"</h2>
+                <!-- <wbr> added -->
+                <h2 class="text-3xl md:text-5xl font-serif font-bold mb-6">กรณีศึกษา<wbr>แบบ "ความเสี่ยง<wbr>เป็นศูนย์"</h2>
                 <p class="text-gray-300 text-lg mb-8 leading-relaxed">
                     เนื่องจากเราเป็นเอเจนซี่ใหม่ที่ได้รับการสนับสนุนจากความร่วมมือระหว่างนักศึกษาจากเยอรมันและไทย เราจึงยังไม่มีกรณีศึกษา (Case Studies) ในท้องถิ่น และเพื่อแก้ปัญหานี้ เราจึงขอมอบข้อเสนอสุดพิเศษให้กับ <strong class="text-white">บริษัทอสังหาริมทรัพย์และเอเจนซี่ระดับพรีเมียมเพียง 3 รายเท่านั้น</strong>:
                 </p>
